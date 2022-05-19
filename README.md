@@ -42,7 +42,7 @@ Make sure you are using the latest version of stable rust by running `rustup upd
 
 `cargo run --release`
 
-On Linux you need to first run:
+On Debian/Ubuntu Linux you need to first run:
 
 `sudo apt-get install libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libspeechd-dev libxkbcommon-dev libssl-dev`
 
@@ -50,7 +50,13 @@ On Fedora Rawhide you need to run:
 
 `dnf install clang clang-devel clang-tools-extra speech-dispatcher-devel libxkbcommon-devel pkg-config openssl-devel libxcb-devel`
 
+On Arch Linux you need to first run:
+
+`sudo pacman -Syv libxcb libspeechd openssl clang jq binaryen`
+
 For running the `build_web.sh` script you also need to install `jq` and `binaryen` with your packet manager of choice.
+
+
 
 ### Compiling for the web
 
